@@ -1,6 +1,9 @@
 Hello there!
 =======
-This is Week 5 Group 2 Project on  NodeJS API powered by MongoDB
+
+Project Name
+-------------
+This is Week 5 Group 2 Project on NodeJS API powered by MongoDB
 
 Project Description
 -----------
