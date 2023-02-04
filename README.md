@@ -19,11 +19,11 @@ We then deployed the API to a cloud provider, in this case we used  Render due t
 ## Programmers
 
 
-* Kelvin Mutuku Ndungi
-* Naomi Wambui Mwangi
-* Hasan Bakhowe Toloi
-* Magdalene Mutheu Mutunga
-* Willan Gitau Njenga
+* Kelvin Mutuku Ndungi.
+* Naomi Wambui Mwangi.
+* Hasan Bakhowe Toloi.
+* Magdalene Mutheu Mutunga.
+* Willan Gitau Njenga.
 
 
 License
