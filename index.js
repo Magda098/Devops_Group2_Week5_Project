@@ -7,6 +7,9 @@ const routes= require('./routes/routes');
 // Define the port number
 const port = process.env.PORT || 3000;
 const databaseUrl =process.env.DATABASE_URL ||'';
+console.log(databaseUrl);
+
+mongoose.set("strictQuery", false);
 
 //Connecting to the database
 mongoose.connect(databaseUrl);
