@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 //import routes
 const routes= require('./routes/routes');
-
+const indexRoutes = require('./routes/index');
 
 // Define the port number
 const port = process.env.PORT || 3000;
@@ -27,6 +27,7 @@ const app = express();
 //ensure application only accepts data in json format
 app.use(express.json());
 //tells the app to use the defines routes
+app.use('/', indexRoutes);
 app.use('/employee',routes);
 
 
