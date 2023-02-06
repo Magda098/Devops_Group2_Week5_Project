@@ -11,7 +11,8 @@ const employeeSchema = new mongoose.Schema({
     required: true,
   },
   ekNo: {
-    type: Number,
+    type: String,
+    required: true
   },
   email: {
     type: String,

@@ -3,11 +3,11 @@ const mongoose = require('mongoose');
 require('dotenv').config();
 //import routes
 const routes= require('./routes/routes');
+const indexRoutes = require('./routes/index');
 
 // Define the port number
 const port = process.env.PORT || 3000;
 const databaseUrl =process.env.DATABASE_URL ||'';
-console.log(databaseUrl);
 
 mongoose.set("strictQuery", false);
 
@@ -27,7 +27,9 @@ const app = express();
 //ensure application only accepts data in json format
 app.use(express.json());
 //tells the app to use the defines routes
-app.use('/.',routes);
+app.use('/', indexRoutes);
+app.use('/employee',routes);
+
 
 app.listen(port, () => {
     console.log(`Server is running on PORT ${port}`);
